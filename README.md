@@ -7,7 +7,9 @@ A study site for Science Olympiad. Pick an event to:
 - drill quizzes from your bank or from AI-written questions
 - ask an AI tutor about the event
 
-The AI (Qwen2.5-1.5B via [WebLLM](https://github.com/mlc-ai/web-llm)) runs entirely in the visitor's browser on their own GPU. Nothing is sent to a server. It needs a recent Chrome or Edge with WebGPU and downloads about 1 GB on first use. Question banks and scores are stored in the visitor's browser.
+The AI runs entirely in the visitor's browser on their own GPU via [WebLLM](https://github.com/mlc-ai/web-llm): Qwen2.5-1.5B (about 1 GB download) or Qwen2.5-3B (about 2 GB, needs 8 GB+ RAM). Nothing is sent to a server. It needs a recent Chrome or Edge with WebGPU. Question banks and scores are stored in the visitor's browser.
+
+If you run [OmniRoute](https://github.com/diegosouzapw/OmniRoute) on your own computer, pick "OmniRoute on this computer" in the AI model menu to use your own providers instead (`http://localhost:20128/v1`, model `auto`). Add at least one provider in the OmniRoute dashboard first. The API key box is optional for a local OmniRoute.
 
 ## Test catalog
 
